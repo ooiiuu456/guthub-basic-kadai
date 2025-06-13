@@ -1,0 +1,98 @@
+body {
+  font-family: sans-serif;
+  min-width: 375px;
+  margin: 0;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+}
+
+.logo {
+  height: 30px;
+  margin-left: 10px;
+}
+
+#menu-sp {
+  float: right;
+  padding: 0;
+  height: 30px;
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+.main-visual {
+  width: 100%;
+  display: block;
+}
+
+/* スマホ用ナビゲーション */
+#nav-sp {
+  background-color: #ce933e;
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  display: none;
+  z-index: 100;
+  color: #fff;
+}
+
+#nav-sp ul {
+  padding-left: 0;
+  margin: 0;
+}
+
+#nav-sp li {
+  list-style: none;
+}
+
+#close {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  height: 24px;
+  cursor: pointer;
+}
+
+#logo-sp {
+  display: block;
+  margin: 80px 0 30px 20px;
+}
+
+#logo-sp img {
+  height: 30px;
+}
+
+#nav-sp a {
+  display: block;
+  color: #ffffff;
+  text-decoration: none;
+  margin: 0 20px;
+  height: 44px;
+  font-size: 16px;
+  background-image: url("images/arrow.png");
+  background-repeat: no-repeat;
+  background-position: right top;
+  line-height: 44px;
+}
+
+#nav-sp a:hover,
+#nav-sp a:active,
+#nav-sp a:visited,
+#nav-sp a:link {
+  color: #ffffff;
+  text-decoration: underline;
+}
+
+/* PC用非表示 */
+@media screen and (min-width: 768px) {
+  #menu-sp,
+  #nav-sp {
+    display: none !important;
+  }
+}

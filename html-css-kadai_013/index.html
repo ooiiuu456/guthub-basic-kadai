@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Organic Cafe</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ヘッダー -->
+  <header>
+    <img src="images/logo-sp.png" alt="Organic Cafe" class="logo">
+    <img id="menu-sp" src="images/button-menu.png" alt="ナビゲーションを開く" onclick="document.getElementById('nav-sp').style.display = 'block'">
+  </header>
+
+  <!-- メインビジュアル -->
+  <main>
+    <h1>Organic Cafe</h1>
+    <p>自家焙煎コーヒーが買えるお店</p>
+    <img src="images/main-visual.jpg" alt="メインビジュアル" class="main-visual">
+  </main>
+
+  <!-- スマホ用ナビゲーション -->
+  <nav id="nav-sp">
+    <ul>
+      <li>
+        <img id="close" src="images/button-close.png" alt="ナビゲーションを閉じる" onclick="document.getElementById('nav-sp').style.display = 'none'">
+      </li>
+      <li>
+        <a id="logo-sp" href="index.html" onclick="document.getElementById('nav-sp').style.display = 'none'">
+          <img src="images/logo-sp.png" alt="トップページに戻る">
+        </a>
+      </li>
+      <li>
+        <a class="menu" href="index.html#concept" onclick="document.getElementById('nav-sp').style.display = 'none'">CONCEPT</a>
+      </li>
+      <li>
+        <a class="menu" href="index.html#product" onclick="document.getElementById('nav-sp').style.display = 'none'">PRODUCT</a>
+      </li>
+      <li>
+        <a class="menu" href="index.html#contact" onclick="document.getElementById('nav-sp').style.display = 'none'">CONTACT</a>
+      </li>
+    </ul>
+  </nav>
+
+</body>
+</html>
